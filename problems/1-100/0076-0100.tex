@@ -1,0 +1,450 @@
+\section{Counting summations} \label{pb.076}
+Il est possible d'écrire cinq sous forme de somme d'exactement six manières différentes :
+\begin{center}
+    \begin{tabular}{c}
+        4 + 1\\
+        3 + 2\\
+        3 + 1 + 1\\
+        2 + 2 + 1\\
+        2 + 1 + 1 + 1\\
+        1 + 1 + 1 + 1 + 1\\
+    \end{tabular}
+\end{center}
+
+Combien de manières différentes y a-t'il d'écrire cent sous la forme d'une somme d'au moins deux entiers positifs ?
+
+\section{Prime summations} \label{pb.077}
+
+Il est possible d'écrire dix sous forme de somme de nombres premiers d'exactement cinq manières différentes :
+
+\begin{center}
+    \begin{tabular}{c}
+        7 + 3\\
+        5 + 5\\
+        5 + 3 + 2\\
+        3 + 3 + 2 + 2\\
+        2 + 2 + 2 + 2 + 2\\
+    \end{tabular}
+\end{center}
+
+Quel est le premier nombre qui peut être écrit sous la forme d'une somme de nombres premiers de plus de cinq mille manières différentes ?
+
+\section{Coin partitions} \label{pb.078}
+
+Notons $p(n)$ comme le nombre de manières dans séparer $n$ pièces en piles. For example, 5 pièces peuvent être réparties en piles de 7 manières différentes exactement, donc $p(5)=7$
+
+\begin{center}
+    \begin{tabular}{|ccccccccc|}
+        \hline
+        O & O & O & O & O & & & &\\
+        \hline
+        O & O & O & O & & O & & &\\
+        \hline
+        O & O & O & & O & O & & &\\
+        \hline
+        O & O & O & & O & & O & &\\
+        \hline
+        O & O & & O & O & & O & &\\
+        \hline
+        O & O & & O & & O & & O &\\
+        \hline
+        O & & O & & O & & O & & O\\
+        \hline
+    \end{tabular}
+\end{center}
+
+Trouvez la plus petite valeur de $n$ pour laquelle $p(n)$ est divisible par 1 million.
+
+\section{Passcode derivation} \label{pb.079}
+
+Une méthode courante de sécurité utilisée par les banques en ligne est de demander à l'utilisateur 3 caractères aléatoires d'un mot de passe. For example, si le mot de passe est 531278, ils peuvent demander les 2ème, 3ème et 5ème caractère, la réponse attendue serait alors 317.
+
+Le fichier texte, keylog.txt, contient 50 essais de connexion réussis.
+
+Compte-tenu du fait que les 3 caractères son toujours demandés dans l'ordre, analysez le fichier pour déterminer le plus petit mot de passe de taille inconnue
+
+\section{Square root digital expansion} \label{pb.080}
+
+Il est bien connu que si la racine carrée d'un nombre entier n'est pas un nombre entier, alors il est irrationnel. La partie décimale d'une telle racine carrée est infinie avec aucun motif se répétant.
+
+La racine carrée de deux est 1.41421356237309504880... et la somme des 1000 premiers chiffres après la virgule est 475.
+
+Pour les 1000 premiers nombres entiers, trouvez le total de la somme des 1000 premiers nombres de la partie décimale pour toutes les racines carrées irrationnelles.
+
+\section{Path sum: two ways} \label{pb.081}
+
+In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by \textbf{only moving to the right and down}, is indicated in bold red and is equal to 2427.
+
+$$\begin{pmatrix}
+    \textcolor[rgb]{1,0,0}{131} & 673 & 234 & 103 & 18 \\
+    \textcolor[rgb]{1,0,0}{201} & \textcolor[rgb]{1,0,0}{96} & \textcolor[rgb]{1,0,0}{342} & 965 & 150 \\
+    630 & 803 & \textcolor[rgb]{1,0,0}{746} & \textcolor[rgb]{1,0,0}{422} & 111\\
+    537 & 699 & 497 & \textcolor[rgb]{1,0,0}{121} & 956\\
+    805 & 732 & 524 & \textcolor[rgb]{1,0,0}{37} & \textcolor[rgb]{1,0,0}{331}\\
+\end{pmatrix}$$
+
+
+Find the minimal path sum, in \href{https://projecteuler.net/project/resources/p081_matrix.txt}{matrix.txt} (Clic droit puis 'Enregistrer sous...'), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by only moving right and down.
+
+\section{Path sum: three ways} \label{pb.082}
+
+\textbf{NOTE:} Ce problème est une version plus compliquée du  \hyperref[pb.081]{problème 81}.
+
+The minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to 994.
+
+$$\begin{pmatrix}
+    131 & 673 & \textcolor[rgb]{1,0,0}{234} & \textcolor[rgb]{1,0,0}{103} & \textcolor[rgb]{1,0,0}{18} \\
+    \textcolor[rgb]{1,0,0}{201} & \textcolor[rgb]{1,0,0}{96} & \textcolor[rgb]{1,0,0}{342} & 965 & 150 \\
+    630 & 803 & 746 & 422 & 111\\
+    537 & 699 & 497 & 121 & 956\\
+    805 & 732 & 524 & 37 & 331\\
+\end{pmatrix}$$
+
+Find the minimal path sum, in \href{https://projecteuler.net/project/resources/p082_matrix.txt}{matrix.txt} (Clic droit puis 'Enregistrer sous...'), a 31K text file containing a 80 by 80 matrix, from the left column to the right column.
+
+\section{Path sum: four ways} \label{pb.083}
+
+\textbf{NOTE:} Ce problème est une version plus beaucoup plus compliquée du  \hyperref[pb.081]{problème 81}.
+
+In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to 2297.
+
+$$\begin{pmatrix}
+    \textcolor[rgb]{1,0,0}{131} & 673 & \textcolor[rgb]{1,0,0}{234} & \textcolor[rgb]{1,0,0}{103} & \textcolor[rgb]{1,0,0}{18} \\
+    \textcolor[rgb]{1,0,0}{201} & \textcolor[rgb]{1,0,0}{96} & \textcolor[rgb]{1,0,0}{342} & 965 & \textcolor[rgb]{1,0,0}{150} \\
+    630 & 803 & 746 & \textcolor[rgb]{1,0,0}{422} & \textcolor[rgb]{1,0,0}{111}\\
+    537 & 699 & 497 & \textcolor[rgb]{1,0,0}{121} & 956\\
+    805 & 732 & 524 & \textcolor[rgb]{1,0,0}{37} & \textcolor[rgb]{1,0,0}{331}\\
+\end{pmatrix}$$
+
+Find the minimal path sum, in \href{https://projecteuler.net/project/resources/p083_matrix.txt}{matrix.txt} (Clic droit puis 'Enregistrer sous...') a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by moving left, right, up, and down.
+
+\section{Monopoly odds} \label{pb.084}
+
+In the game, Monopoly, the standard board is set up in the following way:
+\begin{center}
+    \definecolor{lightgrey}{gray}{0.75}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        GO & A1 & CC1 & A2 & T1 & R1 & B1 & CH1 & B2 & B3 & JAIL\\
+        \hline
+        H2 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        T2 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        H1 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        CH3 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        R4 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        G3 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        CC3 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        G2 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        G1 & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & \cellcolor{lightgrey} & C1\\
+        \hline
+        G2J & F3 & U2 & F2 & F1 & R3 & E3 & E2 & CH2 & E1 & FP\\
+        \hline
+    \end{tabular}
+\end{center}
+
+A player starts on the GO square and adds the scores on two 6-sided dice to determine the number of squares they advance in a clockwise direction. Without any further rules we would expect to visit each square with equal probability: 2.5%. However, landing on G2J (Go To Jail), CC (community chest), and CH (chance) changes this distribution.
+
+In addition to G2J, and one card from each of CC and CH, that orders the player to go directly to jail, if a player rolls three consecutive doubles, they do not advance the result of their 3rd roll. Instead they proceed directly to jail.
+
+At the beginning of the game, the CC and CH cards are shuffled. When a player lands on CC or CH they take a card from the top of the respective pile and, after following the instructions, it is returned to the bottom of the pile. There are sixteen cards in each pile, but for the purpose of this problem we are only concerned with cards that order a movement; any instruction not concerned with movement will be ignored and the player will remain on the CC/CH square.
+
+Community Chest (2/16 cards):
+\begin{itemize}
+    \item Aller à la case départ (DEP)
+    \item Aller en prison (PR)
+\end{itemize}
+
+Chance (10/16 cards):
+\begin{itemize}
+    \item Aller à la case départ (DEP)
+    \item Aller en prison (PR)
+    \item Aller en C1
+    \item Aller en E3
+    \item Aller en H2
+    \item Aller en R1
+    \item Go to next R (railway company)
+    \item Go to next R
+    \item Go to next U (utility company)
+    \item Reculer de trois cases.
+\end{itemize}
+
+The heart of this problem concerns the likelihood of visiting a particular square. That is, the probability of finishing at that square after a roll. For this reason it should be clear that, with the exception of G2J for which the probability of finishing on it is zero, the CH squares will have the lowest probabilities, as 5/8 request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between "Just Visiting" and being sent to JAIL, and we shall also ignore the rule about requiring a double to "get out of jail", assuming that they pay to get out on their next turn.
+
+By starting at GO and numbering the squares sequentially from 00 to 39 we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.
+
+Statistically it can be shown that the three most popular squares, in order, are JAIL $(6.24\%)$ = Square 10, E3 $(3.18\%)$ = Square 24, and GO $(3.09\%)$ = Square 00. So these three most popular squares can be listed with the six-digit modal string: 102400.
+
+If, instead of using two 6-sided dice, two 4-sided dice are used, find the six-digit modal string.
+
+\section{Counting rectangles} \label{pb.085}
+
+By counting carefully it can be seen that a rectangular grid measuring 3 by 2 contains eighteen rectangles:
+
+%TIKZ
+
+Although there exists no rectangular grid that contains exactly two million rectangles, find the area of the grid with the nearest solution.
+
+\section{Cuboid route} \label{pb.086}
+
+A spider, S, sits in one corner of a cuboid room, measuring 6 by 5 by 3, and a fly, F, sits in the opposite corner. By travelling on the surfaces of the room the shortest "straight line" distance from S to F is 10 and the path is shown on the diagram.
+
+%TIKZ 3D
+
+However, there are up to three "shortest" path candidates for any given cuboid and the shortest route doesn't always have integer length.
+
+It can be shown that there are exactly 2060 distinct cuboids, ignoring rotations, with integer dimensions, up to a maximum size of M by M by M, for which the shortest route has integer length when M = 100. This is the least value of M for which the number of solutions first exceeds two thousand; the number of solutions when M = 99 is 1975.
+
+Find the least value of M such that the number of solutions first exceeds one million.
+
+\section{Prime power triples} \label{pb.087}
+
+The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is 28. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
+\begin{center}
+    \begin{tabular}{c}
+        $28 = 2^2 + 2^3 + 2^4$\\
+        $33 = 3^2 + 2^3 + 2^4$\\
+        $49 = 5^2 + 2^3 + 2^4$\\
+        $47 = 2^2 + 3^3 + 2^4$\\
+    \end{tabular}
+\end{center}
+
+
+How many numbers below fifty million can be expressed as the sum of a prime square, prime cube, and prime fourth power?
+
+\section{Product-sum numbers} \label{pb.088}
+
+A natural number, $N$, that can be written as the sum and product of a given set of at least two natural numbers, ${a_1, a_2, ... , a_k}$ is called a product-sum number: $N = a_1 + a_2 + ... + a_k = a_1  \times  a_2  \times  ...  \times  a_k$.
+
+For example, $6 = 1 + 2 + 3 = 1  \times  2  \times  3$.
+
+For a given set of size, $k$, we shall call the smallest N with this property a minimal product-sum number. The minimal product-sum numbers for sets of size, $k = 2, 3, 4, 5$, and $6$ are as follows.
+
+\begin{center}
+    \begin{tabular}{c|l}
+        k=2 & $4 = 2  \times  2 = 2 + 2$\\
+        k=3 & $6 = 1  \times  2  \times  3 = 1 + 2 + 3$\\
+        k=4 & $8 = 1  \times  1  \times  2  \times  4 = 1 + 1 + 2 + 4$\\
+        k=5 & $8 = 1  \times  1  \times  2  \times  2  \times  2 = 1 + 1 + 2 + 2 + 2$\\
+        k=6 & $12 = 1  \times  1  \times  1  \times  1  \times  2  \times  6 = 1 + 1 + 1 + 1 + 2 + 6$\\
+    \end{tabular}
+\end{center}
+
+
+Hence for $2 \leqslant k \leqslant 6$, the sum of all the minimal product-sum numbers is $4+6+8+12 = 30$; note that $8$ is only counted once in the sum.
+
+In fact, as the complete set of minimal product-sum numbers for $2 \leqslant k \leqslant 12$ is ${4, 6, 8, 12, 15, 16}$, the sum is $61$.
+
+What is the sum of all the minimal product-sum numbers for $2 \leqslant k \leqslant 12000$?
+
+\section{Roman numerals} \label{pb.089}
+
+For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a "best" way of writing a particular number.
+
+For example, it would appear that there are at least six ways of writing the number sixteen:
+
+\begin{center}
+    \begin{tabular}{c}
+        IIIIIIIIIIIIIIII\\
+        VIIIIIIIIIII\\
+        VVIIIIII\\
+        XIIIIII\\
+        VVVI\\
+        XVI\\
+    \end{tabular}
+\end{center}
+
+However, according to the rules only XIIIIII and XVI are valid, and the last example is considered to be the most efficient, as it uses the least number of numerals.
+
+The 11K text file, roman.txt (right click and 'Save Link/Target As...'), contains one thousand numbers written in valid, but not necessarily minimal, Roman numerals; see About... Roman Numerals for the definitive rules for this problem.
+
+Find the number of characters saved by writing each of these in their minimal form.
+
+NOTE: You can assume that all the Roman numerals in the file contain no more than four consecutive identical units.
+
+\section{Cube digit pairs} \label{pb.090}
+
+Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of 2-digit numbers.
+
+For example, the square number 64 could be formed:
+
+In fact, by carefully choosing the digits on both cubes it is possible to display all of the square numbers below one-hundred: 01, 04, 09, 16, 25, 36, 49, 64, and 81.
+
+For example, one way this can be achieved is by placing {0, 5, 6, 7, 8, 9} on one cube and {1, 2, 3, 4, 8, 9} on the other cube.
+
+However, for this problem we shall allow the 6 or 9 to be turned upside-down so that an arrangement like ${0, 5, 6, 7, 8, 9}$ and ${1, 2, 3, 4, 6, 7}$ allows for all nine square numbers to be displayed; otherwise it would be impossible to obtain 09.
+
+In determining a distinct arrangement we are interested in the digits on each cube, not the order.
+
+${1, 2, 3, 4, 5, 6}$ is equivalent to ${3, 6, 4, 1, 2, 5}$
+${1, 2, 3, 4, 5, 6}$ is distinct from ${1, 2, 3, 4, 5, 9}$
+
+But because we are allowing 6 and 9 to be reversed, the two distinct sets in the last example both represent the extended set {1, 2, 3, 4, 5, 6, 9} for the purpose of forming 2-digit numbers.
+
+How many distinct arrangements of the two cubes allow for all of the square numbers to be displayed?
+
+\section{Right triangles with integer coordinates} \label{pb.091}
+
+The points $P(x_1, y_1)$ and $Q(x_2, y_2)$ are plotted at integer co-ordinates and are joined to the origin, $O(0,0)$, to form $\Delta OPQ$.
+
+There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between 0 and 2 inclusive; that is,
+$0  \leqslant  x_1, y_1, x_2, y_2  \leqslant  2$.
+
+Given that $0  \leqslant  x_1, y_1, x_2, y2  \leqslant  50$, how many right triangles can be formed?
+
+\section{Square digit chains} \label{pb.092}
+
+A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.
+
+For example,
+
+$$44  \longrightarrow  32  \longrightarrow  13  \longrightarrow  10  \longrightarrow  1 \longrightarrow  1$$
+$$85  \longrightarrow  89  \longrightarrow  145 \longrightarrow  42  \longrightarrow  20  \longrightarrow  4  \longrightarrow  16  \longrightarrow  37  \longrightarrow  58  \longrightarrow  89$$
+
+Therefore any chain that arrives at 1 or 89 will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.
+
+How many starting numbers below ten million will arrive at 89?
+
+\section{Arithmetic expressions} \label{pb.093}
+
+By using each of the digits from the set, ${1, 2, 3, 4}$, exactly once, and making use of the four arithmetic operations $(+, -, *, /)$ and brackets/parentheses, it is possible to form different positive integer targets.
+
+For example,
+\begin{center}
+    \begin{tabular}{c}
+        8 = (4 * (1 + 3)) / 2\\
+        14 = 4 * (3 + 1 / 2)\\
+        19 = 4 * (2 + 3) - 1\\
+        36 = 3 * 4 * (2 + 1)\\
+    \end{tabular}
+\end{center}
+
+Note that concatenations of the digits, like $12 + 34$, are not allowed.
+
+Using the set, ${1, 2, 3, 4}$, it is possible to obtain thirty-one different target numbers of which 36 is the maximum, and each of the numbers $1$ to $28$ can be obtained before encountering the first non-expressible number.
+
+Find the set of four distinct digits, $a < b < c < d$, for which the longest set of consecutive positive integers, $1$ to $n$, can be obtained, giving your answer as a string: $abcd$.
+
+\section{} \label{pb.094}
+
+It is easily proved that no equilateral triangle exists with integral length sides and integral area. However, the almost equilateral triangle 5-5-6 has an area of 12 square units.
+
+We shall define an almost equilateral triangle to be a triangle for which two sides are equal and the third differs by no more than one unit.
+
+Find the sum of the perimeters of all almost equilateral triangles with integral side lengths and area and whose perimeters do not exceed one billion (1,000,000,000).
+
+\section{Amicable chains} \label{pb.095}
+
+The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of 28 are 1, 2, 4, 7, and 14. As the sum of these divisors is equal to 28, we call it a perfect number.
+
+Interestingly the sum of the proper divisors of 220 is 284 and the sum of the proper divisors of 284 is 220, forming a chain of two numbers. For this reason, 220 and 284 are called an amicable pair.
+
+Perhaps less well known are longer chains. For example, starting with 12496, we form a chain of five numbers:
+
+$$12496 \longrightarrow 14288 \longrightarrow 15472 \longrightarrow 14536 \longrightarrow 14264 (\longrightarrow 12496 \longrightarrow ...)$$
+
+Since this chain returns to its starting point, it is called an amicable chain.
+
+Find the smallest member of the longest amicable chain with no element exceeding one million.
+
+\section{Su Doku} \label{pb.096}
+
+Su Doku (Japanese meaning number place) is the name given to a popular puzzle concept. Its origin is unclear, but credit must be attributed to Leonhard Euler who invented a similar, and much more difficult, puzzle idea called Latin Squares. The objective of Su Doku puzzles, however, is to replace the blanks (or zeros) in a 9 by 9 grid in such that each row, column, and 3 by 3 box contains each of the digits 1 to 9. Below is an example of a typical starting puzzle grid and its solution grid.
+
+\begin{center}
+    \begin{tabular}{ccc}
+        \begin{tabular}{V{4}c|c|cV{4}c|p{1.75mm}|cV{4}c|c|cV{4}}
+            \hlineB{4}
+             &  & 3 & 9 &  &  &  &  & 1\\
+             \hline
+             & 2 &  & 3 &  & 5 & 8 &  & 6\\
+            \hline
+            6 &  &  &  &  & 1 & 4 &  & \\
+            \hlineB{4}
+             &  & 8 & 7 &  &  &  &  & 6\\
+            \hline
+            1 &  & 2 &  &  &  & 7 &  & 8\\
+            \hline
+            9 &  &  &  &  & 8 & 2 &  & \\
+            \hlineB{4}
+             &  & 2 & 8 &  &  &  &  & 5\\
+            \hline
+            6 &  & 9 & 2 &  & 3 &  & 1 & \\
+            \hline
+            5 &  &  &  &  & 9 & 3 &  & \\
+            \hlineB{4}
+        \end{tabular}
+         & & 
+        \begin{tabular}{V{4}c|c|cV{4}c|c|cV{4}c|c|cV{4}}
+            \hlineB{4}
+            4 & 8 & 3 & 9 & 6 & 7 & 2 & 5 & 1\\
+            \hline
+            9 & 2 & 1 & 3 & 4 & 5 & 8 & 7 & 6\\
+            \hline
+            6 & 5 & 7 & 8 & 2 & 1 & 4 & 9 & 3\\
+            \hlineB{4}
+            5 & 4 & 8 & 7 & 2 & 9 & 1 & 3 & 6\\
+            \hline
+            1 & 3 & 2 & 5 & 6 & 4 & 7 & 9 & 8\\
+            \hline
+            9 & 7 & 6 & 1 & 3 & 8 & 2 & 4 & 5\\
+            \hlineB{4}
+            3 & 7 & 2 & 8 & 1 & 4 & 6 & 9 & 5\\
+            \hline
+            6 & 8 & 9 & 2 & 5 & 3 & 4 & 1 & 7\\
+            \hline
+            5 & 1 & 4 & 7 & 6 & 9 & 3 & 8 & 2\\
+            \hlineB{4}
+        \end{tabular}\\
+    \end{tabular}
+\end{center}
+
+A well constructed Su Doku puzzle has a unique solution and can be solved by logic, although it may be necessary to employ "guess and test" methods in order to eliminate options (there is much contested opinion over this). The complexity of the search determines the difficulty of the puzzle; the example above is considered easy because it can be solved by straight forward direct deduction.
+
+The 6K text file, sudoku.txt (right click and 'Save Link/Target As...'), contains fifty different Su Doku puzzles ranging in difficulty, but all with unique solutions (the first puzzle in the file is the example above).
+
+By solving all fifty puzzles find the sum of the 3-digit numbers found in the top left corner of each solution grid; For example, 483 is the 3-digit number found in the top left corner of the solution grid above.
+
+\section{Large non-Mersenne prime} \label{pb.097}
+
+The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $2^{6972593}-1$; it contains exactly 2,098,960 digits. Subsequently other Mersenne primes, of the form $2^p-1$, have been found which contain more digits.
+
+However, in 2004 there was found a massive non-Mersenne prime which contains 2,357,207 digits: $28433 \times 2^{7830457}+1$.
+
+Find the last ten digits of this prime number.
+
+\section{Anagramic squares} \label{pb.098}
+
+By replacing each of the letters in the word CARE with 1, 2, 9, and 6 respectively, we form a square number: 1296 = 362. What is remarkable is that, by using the same digital substitutions, the anagram, RACE, also forms a square number: 9216 = 962. We shall call CARE (and RACE) a square anagram word pair and specify further that leading zeroes are not permitted, neither may a different letter have the same digital value as another letter.
+
+Using words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, find all the square anagram word pairs (a palindromic word is NOT considered to be an anagram of itself).
+
+What is the largest square number formed by any member of such a pair?
+
+\textbf{NOTE:} All anagrams formed must be contained in the given text file.
+
+\section{Largest exponential} \label{pb.099}
+
+Comparing two numbers written in index form like $2^{11}$ and $3^7$ is not difficult, as any calculator would confirm that $2^{11} = 2048 < 3^7 = 2187$.
+
+However, confirming that 632382518061 > 519432525806 would be much more difficult, as both numbers contain over three million digits.
+
+Using base\_exp.txt (right click and 'Save Link/Target As...'), a 22K text file containing one thousand lines with a base/exponent pair on each line, determine which line number has the greatest numerical value.
+
+\textbf{NOTE:} The first two lines in the file represent the numbers in the example given above.
+
+\section{Arranged probability} \label{pb.100}
+
+If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs is :
+$$P(BB) = \frac{15}{21} \times \frac{14}{20} = \frac{1}{2}$$
+
+The next such arrangement, for which there is exactly 50\% chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.
+
+By finding the first arrangement to contain over $10^{12} = 1,000,000,000,000$ discs in total, determine the number of blue discs that the box would contain.

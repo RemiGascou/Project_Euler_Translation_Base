@@ -1,0 +1,28 @@
+\newcommand\tab[1][0.6cm]{\hspace*{#1}} %Create and define tab
+
+\definecolor{lightgray}{gray}{0.75}
+
+\addtolength{\cftsecnumwidth}{12pt} %Spacing correction in table of contents
+
+
+%------- Do not append new commands after :
+
+\hypersetup{	
+    colorlinks=false, % colorise les liens
+    linkbordercolor={1 1 1},
+    breaklinks=true, % permet le retour à la ligne dans les liens trop longs
+    urlcolor=blue, % couleur des hyperliens 
+    linkcolor=black,	% couleur des liens internes 
+    citecolor=black,	% couleur des références 
+    pdftitle={Problèmes du Projet Euler - Traduction Française}, % informations apparaissant dans 
+    pdfauthor={Rémi Gascou}, % les informations du document 
+    pdfsubject={}	% sous Acrobat. 
+}
+
+\input{parameters}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\beforesectionnumbering\text{ }\thesection  - }{0em}{}
+
+\title{\vspace{7cm}\Huge{\maintitle} \\ \vspace{1cm} \LARGE{\mainsubtitle}\vspace{3cm}}
+\author{}
+\date{}
