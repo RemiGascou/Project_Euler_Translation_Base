@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{boldline,multirow,tabularx,colortbl}
+\usepackage{amsfonts,amssymb,amsmath,mathrsfs}
+\usepackage{pgf,tikz,xcolor}
+\usetikzlibrary{calc,positioning,shapes.geometric,shapes.symbols,shapes.misc, fit, shapes, arrows}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+\usepackage[francais]{babel}
+
+\input{advanced.params/tikz.set}
+\input{advanced.params/misc.commands}
+
+\begin{document}
+    \renewcommand{\contentsname}{\begin{center}\tocheader \end{center}}
+    \maketitle
+    \pagenumbering{gobble}
+    \newpage
+    
+    \begin{center}
+         
+        \vspace{11cm}
+        
+        Translated by \translatorname\\
+        \bigskip
+        $-$ Version of \today $-$ 
+    \end{center}
+    
+    \newpage \newpage
+    
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \tableofcontents
+    
+    \include{Preface}
+    %\setcounter{section}{24}
+    %\part*{\begin{center}Les problèmes (1 à 600)\end{center}}
+    %\include{problems_FR/1-100/pack_0001-0100}
+    \include{problems/101-200/pack_0101-0200}
+    %\include{problems_FR/201-300/pack_0201-0300}
+    %\include{problems_FR/301-400/pack_0301-0400}
+    %\include{problems_FR/401-500/pack_0401-0500}
+    %\include{problems_FR/501-600/pack_0501-0600}
+    %\include{problems_FR/601-700/pack_0601-0700}
+    
+\end{document}
